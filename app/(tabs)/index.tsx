@@ -1,4 +1,4 @@
-import { Image } from 'expo-image';
+/*import { Image } from 'expo-image';
 import { Platform, StyleSheet } from 'react-native';
 
 import { HelloWave } from '@/components/HelloWave';
@@ -9,7 +9,7 @@ import { ThemedView } from '@/components/ThemedView';
 export default function HomeScreen() {
   return (
     <ParallaxScrollView
-      headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
+      headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}  // açık yeşil #B2D8B2  koyu mavi #1D3D47
       headerImage={
         <Image
           source={require('@/assets/images/partial-react-logo.png')}
@@ -57,8 +57,9 @@ export default function HomeScreen() {
 
 const styles = StyleSheet.create({
   titleContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: 'row',  
+                           // ana eksen (düşey) justifyContent row= soldan sağa
+    alignItems: 'center',  //alignItems=kesen eksen (yatay) flex-start,flex-end ve center seçenekleri var
     gap: 8,
   },
   stepContainer: {
@@ -73,3 +74,37 @@ const styles = StyleSheet.create({
     position: 'absolute',
   },
 });
+*/
+
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+import MapView from 'react-native-maps';
+
+export default function HomeScreen() {
+  return (
+    <View style={styles.container}>
+      <MapView
+        style={styles.map}
+        initialRegion={{
+          latitude: 37.0743,      // Osmaniye koordinatları 
+          longitude: 36.2478,
+          latitudeDelta: 0.05,
+          longitudeDelta: 0.05,
+        }}
+        mapType="standard"
+        showsUserLocation={true}
+        showsMyLocationButton={true}
+      />
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  map: {
+    ...StyleSheet.absoluteFillObject,
+  },
+});
+
