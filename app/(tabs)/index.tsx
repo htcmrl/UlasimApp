@@ -1,110 +1,100 @@
-/*import { Image } from 'expo-image';
-import { Platform, StyleSheet } from 'react-native';
 
-import { HelloWave } from '@/components/HelloWave';
-import ParallaxScrollView from '@/components/ParallaxScrollView';
-import { ThemedText } from '@/components/ThemedText';
-import { ThemedView } from '@/components/ThemedView';
+// light: #A1CEDC  dark: #1D3D47  açık yeşil #B2D8B2  koyu mavi #1D3D47
 
-export default function HomeScreen() {
-  return (
-    <ParallaxScrollView
-      headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}  // açık yeşil #B2D8B2  koyu mavi #1D3D47
-      headerImage={
-        <Image
-          source={require('@/assets/images/partial-react-logo.png')}
-          style={styles.reactLogo}
-        />
-      }>
-      <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Welcome!</ThemedText>
-        <HelloWave />
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 1: Try it</ThemedText>
-        <ThemedText>
-          Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> to see changes.
-          Press{' '}
-          <ThemedText type="defaultSemiBold">
-            {Platform.select({
-              ios: 'cmd + d',
-              android: 'cmd + m',
-              web: 'F12',
-            })}
-          </ThemedText>{' '}
-          to open developer tools.
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 2: Explore</ThemedText>
-        <ThemedText>
-          {`Tap the Explore tab to learn more about what's included in this starter app.`}
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
-        <ThemedText>
-          {`When you're ready, run `}
-          <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> to get a fresh{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> directory. This will move the current{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
-          <ThemedText type="defaultSemiBold">app-example</ThemedText>.
-        </ThemedText>
-      </ThemedView>
-    </ParallaxScrollView>
-  );
-}
 
-const styles = StyleSheet.create({
-  titleContainer: {
-    flexDirection: 'row',  
-                           // ana eksen (düşey) justifyContent row= soldan sağa
-    alignItems: 'center',  //alignItems=kesen eksen (yatay) flex-start,flex-end ve center seçenekleri var
-    gap: 8,
-  },
-  stepContainer: {
-    gap: 8,
-    marginBottom: 8,
-  },
-  reactLogo: {
-    height: 178,
-    width: 290,
-    bottom: 0,
-    left: 0,
-    position: 'absolute',
-  },
-});
-*/
-
+import { Link } from 'expo-router';
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
-import MapView from 'react-native-maps';
+import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import MapView, { Marker, PROVIDER_GOOGLE } from 'react-native-maps';
+
 
 export default function HomeScreen() {
+  const osmaniyeKoordinat = {
+    latitude: 37.0745,     // Osmaniye merkez
+    longitude: 36.2475,
+    latitudeDelta: 0.05,
+    longitudeDelta: 0.05,
+  };
+
+  const duraklar = [
+    {
+      id: 1,
+      title: 'Üniversite 1',
+      coordinate: { latitude: 37.044403, longitude: 36.225797 },
+    },
+    {
+      id: 2,
+      title: 'Üniversite 2',
+      coordinate: { latitude: 37.044416, longitude: 36.225995 },
+    },
+    {
+      id: 3,
+      title: 'Fakıuşağı',
+      coordinate: { latitude: 37.043142, longitude: 36.225046 },
+    },
+  ];
+
   return (
     <View style={styles.container}>
       <MapView
         style={styles.map}
-        initialRegion={{
-          latitude: 37.0743,      // Osmaniye koordinatları 
-          longitude: 36.2478,
-          latitudeDelta: 0.05,
-          longitudeDelta: 0.05,
-        }}
-        mapType="standard"
-        showsUserLocation={true}
-        showsMyLocationButton={true}
-      />
+        provider={PROVIDER_GOOGLE}
+        initialRegion={osmaniyeKoordinat}
+      >
+        {duraklar.map((durak) => (
+          <Marker
+            key={durak.id}
+            coordinate={durak.coordinate}
+            title={durak.title}
+          >
+
+            <Image
+              source={require('../../assets/images/durak-icon.png')}
+              style={{ width: 40, height: 40, resizeMode: 'contain' }} // Boyutlar buradan ayarlanıyor
+            />
+          </Marker>
+
+        ))}
+      </MapView>
+
+      <Link href="/about" asChild>
+        <TouchableOpacity style={styles.aboutButton}>
+          <Text style={styles.aboutButtonText}>?</Text>
+        </TouchableOpacity>
+      </Link>
+
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
   map: {
-    ...StyleSheet.absoluteFillObject,
+    ...StyleSheet.absoluteFillObject,  // Bu, haritanın tüm ekranı kaplamasını sağlar
+  },
+  // Buton Stilleri
+  aboutButton: {
+    position: 'absolute',
+    top: 60,
+    right: 20,
+    backgroundColor: 'white',
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    justifyContent: 'center',
+    alignItems: 'center',
+    elevation: 8,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+  },
+  aboutButtonText: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: '#333',
   },
 });
 
