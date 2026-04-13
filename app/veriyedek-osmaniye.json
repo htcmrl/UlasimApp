@@ -1,0 +1,525 @@
+{
+    "result": {
+        "cmd": "/web/nearest/find",
+        "code": 0,
+        "message": "OK",
+        "dateTime": "20260228112846",
+        "debugTimeDiff": "",
+        "authType": ""
+    },
+    "routeList": [
+        {
+            "routeCode": "00010",
+            "displayRouteCode": "A1",
+            "name": "MEVLANA-HASTANE",
+            "routeColor": "00BD09",
+            "routeType": "3",
+            "routeTextColor": "FFFFFF",
+            "agencyId": "1",
+            "agencyName": "SS 106 Nolu Koop"
+        },
+        {
+            "routeCode": "00100",
+            "displayRouteCode": "A10",
+            "name": "YENİ MH-GEBELİ",
+            "routeColor": "00A6FF",
+            "routeType": "3",
+            "routeTextColor": "FFFFFF",
+            "agencyId": "1",
+            "agencyName": "SS 106 Nolu Koop"
+        },
+        {
+            "routeCode": "00110",
+            "displayRouteCode": "A11",
+            "name": "ŞİRİNEVLER-YENİ HAL",
+            "routeColor": "00A6FF",
+            "routeType": "3",
+            "routeTextColor": "FFFFFF",
+            "agencyId": "1",
+            "agencyName": "SS 106 Nolu Koop"
+        },
+        {
+            "routeCode": "00120",
+            "displayRouteCode": "A12",
+            "name": "BAŞ MH-TREN GARI",
+            "routeColor": "00A6FF",
+            "routeType": "3",
+            "routeTextColor": "FFFFFF",
+            "agencyId": "1",
+            "agencyName": "SS 106 Nolu Koop"
+        },
+        {
+            "routeCode": "00130",
+            "displayRouteCode": "A13",
+            "name": "KURTULUŞ-KARAÇAY",
+            "routeColor": "00A6FF",
+            "routeType": "3",
+            "routeTextColor": "FFFFFF",
+            "agencyId": "1",
+            "agencyName": "SS 106 Nolu Koop"
+        },
+        {
+            "routeCode": "00150",
+            "displayRouteCode": "A15",
+            "name": "YENİ HASTANE-OTOGAR",
+            "routeColor": "FF0000",
+            "routeType": "3",
+            "routeTextColor": "FFFFFF",
+            "agencyId": "1",
+            "agencyName": "SS 106 Nolu Koop"
+        },
+        {
+            "routeCode": "00160",
+            "displayRouteCode": "A16",
+            "name": "FAKIUŞAĞI-OTOGAR",
+            "routeColor": "FF0000",
+            "routeType": "3",
+            "routeTextColor": "FFFFFF",
+            "agencyId": "1",
+            "agencyName": "SS 106 Nolu Koop"
+        },
+        {
+            "routeCode": "00190",
+            "displayRouteCode": "A19",
+            "name": "ÜNİVERSİTE 2.KAPI-OTOGAR",
+            "routeColor": "FF0000",
+            "routeType": "3",
+            "routeTextColor": "FFFFFF",
+            "agencyId": "4",
+            "agencyName": "Osmaniye Belediye"
+        },
+        {
+            "routeCode": "00020",
+            "displayRouteCode": "A2",
+            "name": "YENİ MH-KARAÇAY 1",
+            "routeColor": "FF0000",
+            "routeType": "3",
+            "routeTextColor": "FFFFFF",
+            "agencyId": "1",
+            "agencyName": "SS 106 Nolu Koop"
+        },
+        {
+            "routeCode": "00030",
+            "displayRouteCode": "A3",
+            "name": "OTOGAR-ÇARŞI",
+            "routeColor": "00BD09",
+            "routeType": "3",
+            "routeTextColor": "FFFFFF",
+            "agencyId": "1",
+            "agencyName": "SS 106 Nolu Koop"
+        },
+        {
+            "routeCode": "00040",
+            "displayRouteCode": "A4",
+            "name": "OTOGAR-DEREOBASI",
+            "routeColor": "00BD09",
+            "routeType": "3",
+            "routeTextColor": "FFFFFF",
+            "agencyId": "1",
+            "agencyName": "SS 106 Nolu Koop"
+        },
+        {
+            "routeCode": "00050",
+            "displayRouteCode": "A5",
+            "name": "FAKIUŞAĞI-ÇARŞI",
+            "routeColor": "FF5900",
+            "routeType": "3",
+            "routeTextColor": "FFFFFF",
+            "agencyId": "1",
+            "agencyName": "SS 106 Nolu Koop"
+        },
+        {
+            "routeCode": "00060",
+            "displayRouteCode": "A6",
+            "name": "YENİ MH-KARAÇAY 2",
+            "routeColor": "FF5900",
+            "routeType": "3",
+            "routeTextColor": "FFFFFF",
+            "agencyId": "1",
+            "agencyName": "SS 106 Nolu Koop"
+        },
+        {
+            "routeCode": "00070",
+            "displayRouteCode": "A7",
+            "name": "SANAYİ-HASTANE",
+            "routeColor": "008CFF",
+            "routeType": "3",
+            "routeTextColor": "FFFFFF",
+            "agencyId": "1",
+            "agencyName": "SS 106 Nolu Koop"
+        },
+        {
+            "routeCode": "00080",
+            "displayRouteCode": "A8",
+            "name": "EYÜP SULTAN-HASTANE",
+            "routeColor": "00AEFF",
+            "routeType": "3",
+            "routeTextColor": "FFFFFF",
+            "agencyId": "1",
+            "agencyName": "SS 106 Nolu Koop"
+        },
+        {
+            "routeCode": "00090",
+            "displayRouteCode": "A9",
+            "name": "TOKİ-HASTANE",
+            "routeColor": "00AEFF",
+            "routeType": "3",
+            "routeTextColor": "FFFFFF",
+            "agencyId": "1",
+            "agencyName": "SS 106 Nolu Koop"
+        }
+    ],
+    "stopList": [
+        {
+            "routeType": "3",
+            "stopId": "10001",
+            "name": "EYÜP SULTAN SON DURAK",
+            "lat": "37.0992003",
+            "lng": "36.2706204"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10002",
+            "name": "KADIN DOĞUM HASTANESİ",
+            "lat": "37.0831123",
+            "lng": "36.2663004"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10003",
+            "name": "İBNİ SİNA",
+            "lat": "37.0808928",
+            "lng": "36.2629194"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10004",
+            "name": "NAHİR YOLU DURAĞI",
+            "lat": "37.0792916",
+            "lng": "36.2584603"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10005",
+            "name": "OKUL YOLU DURAĞI",
+            "lat": "37.0781914",
+            "lng": "36.2554414"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10006",
+            "name": "KADİRLİ YOLU DURAĞI",
+            "lat": "37.0774269",
+            "lng": "36.2531923"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10007",
+            "name": "YENİ BELEDİYE DURAĞI",
+            "lat": "37.0763085",
+            "lng": "36.249857"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10008",
+            "name": "ÇİFT PETROL DURAĞI",
+            "lat": "37.0767335",
+            "lng": "36.2519783"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10009",
+            "name": "CUMHURİYET MEYDANI",
+            "lat": "37.0746309",
+            "lng": "36.2508804"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10010",
+            "name": "ZAFER CAMİ DURAĞI",
+            "lat": "37.0737714",
+            "lng": "36.2493749"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10011",
+            "name": "MEHMET EMİNLER DURAĞI",
+            "lat": "37.0727259",
+            "lng": "36.2481077"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10012",
+            "name": "PARK HASTANESİ",
+            "lat": "37.0716062",
+            "lng": "36.24684"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10013",
+            "name": "BAHÇELİ BULVARI",
+            "lat": "37.0698605",
+            "lng": "36.2451302"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10014",
+            "name": "ZORKUN YOLU DURAĞI",
+            "lat": "37.0682838",
+            "lng": "36.2430504"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10015",
+            "name": "A101 DURAĞI",
+            "lat": "37.0665521",
+            "lng": "36.2422081"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10016",
+            "name": "SİTELER DURAĞI",
+            "lat": "37.0625983",
+            "lng": "36.2390287"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10017",
+            "name": "SİTELER 2 DURAĞI",
+            "lat": "37.061832",
+            "lng": "36.23813"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10018",
+            "name": "MALAZGİRT PASTANESİ",
+            "lat": "37.0593363",
+            "lng": "36.2411984"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10019",
+            "name": "AYNUR FATMA DURAĞI",
+            "lat": "37.0589432",
+            "lng": "36.2485208"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10020",
+            "name": "MİMAR SİNAN CAMİ DURAĞI",
+            "lat": "37.0530567",
+            "lng": "36.2490501"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10021",
+            "name": "CAN MARKET DURAĞI",
+            "lat": "37.0577674",
+            "lng": "36.2346396"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10022",
+            "name": "HALK EĞİTİM DURAĞI",
+            "lat": "37.0514669",
+            "lng": "36.2261258"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10023",
+            "name": "LİSELER DURAĞI",
+            "lat": "37.0544409",
+            "lng": "36.2226718"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10024",
+            "name": "SOSYAL HIZMETLER",
+            "lat": "37.0579641",
+            "lng": "36.2179755"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10025",
+            "name": "ULAŞLI PETROL",
+            "lat": "37.057105",
+            "lng": "36.2091353"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10026",
+            "name": "HASTANE KAVŞAĞI",
+            "lat": "37.0558336",
+            "lng": "36.1847725"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10027",
+            "name": "BÜYÜK HASTANE DURAĞI",
+            "lat": "37.0511338",
+            "lng": "36.1821579"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10028",
+            "name": "HASTANE KAVŞAĞI 2",
+            "lat": "37.0551287",
+            "lng": "36.1849335"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10029",
+            "name": "ULAŞLI PETROL 2",
+            "lat": "37.0565974",
+            "lng": "36.207179"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10030",
+            "name": "BAĞKUR EVLERİ DURAĞI",
+            "lat": "37.0581227",
+            "lng": "36.2138763"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10031",
+            "name": "SOSYAL HİZMETLER 2",
+            "lat": "37.0586756",
+            "lng": "36.2170585"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10032",
+            "name": "LİSELER 2 DURAĞI",
+            "lat": "37.0541901",
+            "lng": "36.2225284"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10033",
+            "name": "TOSYALI DURAĞI",
+            "lat": "37.0528586",
+            "lng": "36.2307024"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10034",
+            "name": "CAN MARKET 2",
+            "lat": "37.0577236",
+            "lng": "36.2345713"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10035",
+            "name": "ZİYA BEY CAMİ DURAĞI",
+            "lat": "37.0549162",
+            "lng": "36.2400104"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10036",
+            "name": "KAROCU KEMAL",
+            "lat": "37.053916",
+            "lng": "36.24182"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10037",
+            "name": "MİMAR SİNAN 2 DURAĞI",
+            "lat": "37.0527924",
+            "lng": "36.2488568"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10038",
+            "name": "AYNUR FATMA 2",
+            "lat": "37.0588874",
+            "lng": "36.2488313"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10039",
+            "name": "YENİ HAYAT HASTANE DURAĞI",
+            "lat": "37.0612444",
+            "lng": "36.2376661"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10040",
+            "name": "MİTHAT PAŞA OKULU",
+            "lat": "37.0633395",
+            "lng": "36.2397562"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10041",
+            "name": "A101 2 DURAĞI",
+            "lat": "37.0675065",
+            "lng": "36.2426431"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10042",
+            "name": "BAHÇELİ BULVARI 2",
+            "lat": "37.069352",
+            "lng": "36.2445578"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10043",
+            "name": "PARK HASTANESİ 2",
+            "lat": "37.0718413",
+            "lng": "36.2471018"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10044",
+            "name": "ESKİ BELEDİYE DURAĞI",
+            "lat": "37.0728622",
+            "lng": "36.2489768"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10045",
+            "name": "İŞ BANKASI DURAĞI",
+            "lat": "37.0735291",
+            "lng": "36.251722"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10046",
+            "name": "HALK BANKASI DURAĞI",
+            "lat": "37.0740713",
+            "lng": "36.253796"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10047",
+            "name": "VİTAMİN ÇİFTLİĞİ",
+            "lat": "37.0769708",
+            "lng": "36.2525613"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10048",
+            "name": "KADİRLİ YOLU DURAĞI 2",
+            "lat": "37.0776187",
+            "lng": "36.2542789"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10049",
+            "name": "SHELL PETROL DURAĞI",
+            "lat": "37.0784618",
+            "lng": "36.2567187"
+        },
+        {
+            "routeType": "3",
+            "stopId": "10050",
+            "name": "KADIN DOĞUM HASTANESİ 2",
+            "lat": "37.0830123",
+            "lng": "36.2664199"
+        }
+    ],
+    "placeList": []
+}

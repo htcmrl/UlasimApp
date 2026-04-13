@@ -21,6 +21,10 @@ export default function RootLayout() {
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
       <Stack>
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+        <Stack.Screen name="hatlar" options={{ title: 'Hatlar', headerShown: true }} />
+        <Stack.Screen name="hat-detay" options={{ title: 'Hat Detay', headerShown: true }} />
+        <Stack.Screen name="duraklar" options={{ title: 'Duraklar', headerShown: true }} />
+        <Stack.Screen name="nasil-giderim" options={{ title: 'Nasıl Giderim?', headerShown: true }} />
         <Stack.Screen name="+not-found" />
       </Stack>
       <StatusBar style="auto" />
